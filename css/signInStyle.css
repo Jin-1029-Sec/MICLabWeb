@@ -1,0 +1,116 @@
+
+/*body{
+    background-color: rgba(132, 246, 252, 0.2);
+    background-size: 44px 44px;
+    background-position: 0 0,22px 22px;
+}*/
+
+body {
+    background: rgb(109, 181, 252) linear-gradient(22deg, rgb(126, 255, 255), rgb(122, 188, 255), rgb(175, 255, 129)) fixed;
+      color: white;
+    font: normal 32px/1.6 system-ui, sans-serif;
+      text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+    margin: 3rem;
+}
+
+.main-div{
+    background-color: azure;
+    width: 450px;
+    height: 500px;
+    margin-top: 12%;
+    margin-left: 37.5%;
+    padding-top: 25px;
+    border: 1px black solid;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+
+.logo{
+    width: 450px;
+    height: 100px;
+}
+
+.logo-img{
+    width: 170px;
+    height: 70px;
+}
+
+.main-div-title{
+    width: 450px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main-div-text1{
+    width: 450px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-div-text2{
+    width: 450px;
+    height: 50px;
+    margin-top: 5px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#account-container,#password-container{
+    outline: 0;
+    height: 45px;
+    width: 350px;
+    border: 0;
+    border-bottom: 2px solid rgb(187, 187, 187);
+}
+
+#account-container:focus,#password-container:focus{
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #f5ff67,#38ef7d);
+    border-image-slice: 1;
+    box-shadow: none;
+}
+
+
+.main-div-submit{
+    width: 450px;
+    height: 100px;
+    margin-top: 45px;
+    
+    font-size: 16px;
+}
+
+#submit-button{
+    background-color: #0189b6; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a:link {
+    color: #30b5d6;
+    text-decoration: none;
+}
+  
+  a:visited {
+    text-decoration: none;
+}
+  
+  a:hover {
+    text-decoration: underline;
+}
+  
+  a:active {
+    text-decoration: underline;
+}
+  

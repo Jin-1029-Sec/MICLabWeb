@@ -1,0 +1,330 @@
+/*回頂端btn*/
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    display:none; /* 默認隱藏，這樣在第一屏才不顯示 */
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 顯示在頁面底部 */
+    right: 30px; /* 顯示在頁面的右邊 */
+    z-index: 99; /* 確保不被其他功能覆蓋*/
+    border: 1px solid #55b0c7; /* 顯示邊框 */
+    outline: none; /* 不顯示外框 */
+    background-color: #fff; /* 設置背景背景顏色 */
+    color: #5cb85c; 
+    cursor: pointer; /* 滑鼠移到按鈕上改鼠標 */
+    padding: 10px 15px 15px 15px; /*btn內邊距 */
+    border-radius: 10px; /*圓角*/
+}
+
+@keyframes fadeInAnimation {
+    35% {opacity: 0.35; /*不透明度*/}
+    100% {opacity: 1;}
+}
+
+
+
+@keyframes textMove {
+
+    from {
+    
+    top: 90%; 
+    
+    }
+    
+    to {
+    
+    top:35%;
+    
+    }
+    
+}
+
+@keyframes ltextMove {
+    from {
+    top: 115%; 
+    }
+    to {
+    
+    top:60%;
+    
+    }
+    
+}
+
+/*頁首*/
+.header-wrap{
+    width:100%;
+    height:70px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.logo-img{
+    width: 150px;
+    height: 70px;
+}
+.nav-bar-ul-div{
+    width: 100%;
+    height:60px;
+    display: flex;
+    padding: 7px;
+}
+
+.nav-bar-div1{
+    width: 10%;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav-bar-div_right{
+    width: 10%;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 40%;
+}
+
+.nav-bar-member-droplist{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.nav-bar-div1-mem{
+    width: 10%;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav-bar-div1-mem:hover .nav-bar-member-droplist{
+    display: block;
+}
+
+li {
+    float: left;
+}
+
+.nav-bar-a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+/*屬標移動此區改背景颜色 */
+.nav-bar-a:hover {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.nav-bar-a-member{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.nav-bar-a-member:hover{
+    background-color: #555;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.nav-bar-member-a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-bar-member-droplist a:hover{
+    background-color: #f1f1f1;
+}
+.nav-bar-li-member-div{
+    position: absolute;
+    top:7px;
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    z-index: -999;
+    display: block;
+}
+/*頁首-end*/
+
+/*------------------------------
+首頁幻燈片區
+------------------------------*/
+/*整塊背景區域*/
+.video-overlay{
+    background-color: #dad8f2;
+    width:100%;
+    height:570px;
+}
+/*左按鍵切換*/
+.video-overlay-left{
+    float:left;
+    position:relative;
+    text-align:center;
+    width:15%;
+    height: 500px;
+}
+.arrow-left{
+    position:absolute;
+    top: 45%;
+    left: 45%;
+    width:42px;
+    height:45px;
+}
+/*右按鍵切換*/
+.video-overlay-right{
+    float:right;
+    position:relative;
+    text-align:center;
+    width:15%;
+    height: 500px;
+}
+.arrow-right{
+    position:absolute;
+    top: 45%;
+    left: 45%;
+    width:42px;
+    height:45px;
+}
+/*內文區*/
+.video-overlay-center{
+    float:left;
+    position: relative;
+    width:70%;
+    height: 500px;
+    background-color: #111;
+}
+.video-overlay-img-c{
+    width:100%;
+    height:500px; 
+}
+.video-overlay-img-content{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 500px;
+    left: 0px;
+    background-color: #000;
+    opacity:0.5;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 32px;
+}
+/*點點切換*/
+.dot-div{
+    text-align:center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: #ff0 0.6s ease;
+}
+.dot:hover {
+    background-color: #717171;
+}
+
+/*--------------------------------
+
+--------------------------------*/
+.content-div{
+    width: 100%;
+    height: 600px;
+    padding-top: 25px;
+    padding-left: 7% ;
+    padding-right: 7%;
+}
+.content-div-1{
+    width: 1300px;
+    height: 400px;
+    margin-right: 6%;
+    background-color: #d8f2da;
+    padding-left: 350px;
+    padding-top: 250px;
+}
+
+.content-div-txt{
+    width: 250px;
+    height: 80px;
+    background-color: #281125;
+    color: #d8f2da;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.big-content-div{
+    padding-top: 75px;
+    width: 100%;
+    height: 500px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.big-content-div-1{
+    width: 1650px;
+    height: 500px;
+    background-color: #f0f2d8;
+}
+
+
+/*內文title*/
+.intro-div{
+    width: 100%;
+    height: 1000px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 36px;
+}
+
+/*-------------------------------
+頁尾資訊欄
+-------------------------------*/
+.page-bottom{
+    width: 100%;
+    height: 220px;
+    background-color: #d8f0f2;
+    margin-top: 100px;
+}
+/*頁尾文字簡介*/
+.MICLAB-intro{
+    margin:0 auto;      /*div置中*/
+    text-align: left;   /*文字靠左*/
+    width: 340px;
+    height: 220px;
+    font-size: 18px;
+    color:#000;
+    padding-top: 20px;
+}
+/*頁尾logo_img*/
+.stust-logo{
+    width: 340px;
+    margin:0 auto;
+    text-align: center; 
+    padding-top: 20px;
+}
+.stust-logo,img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
